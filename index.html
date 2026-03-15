@@ -13,12 +13,12 @@
     <h5 id="name">SachinSE.</h5>
      <div class="top-nav">
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Projects</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#works">Projects</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
         </div>    
   </header>
 
@@ -29,8 +29,28 @@
         <h1>Sachin Ishanga</h1>
         <h3>And I'm a <span>Software Engineer</span></h3>
 
-        <a href="#" class="btn">Download CV</a>
+        <a href="#" class="btn">Download CV</a> 
+         <div class="social-icons">
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" title="LinkedIn">
+                <img src="assests/icons/linkedin.png" alt="">
+            </a>
+            <a href="https://discord.com/users/your-id" target="_blank" title="Discord">
+                <img src="assests/icons/github.png" alt="">
+            </a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank" title="Facebook">
+                <img src="assests/icons/facebook.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/yourusername" target="_blank" title="Instagram">
+                <img src="assests/icons/instagram.png" alt="">
+            </a>
+            <a href="mailto:your.email@example.com" title="Email">
+               <img src="assests/icons/gmail.png" alt="">
+            </a>
+        </div>
     </div>
+    </div>
+
+   
 
     <div class="home-img">
         <div class="circle"></div>
@@ -45,11 +65,12 @@
   <div class="about-container">
 
     <div class="about-img">
+      <div class="circle2"></div>
       <img src="assests/homepic.png" alt="Sachin">
     </div>
 
     <div class="about-content">
-      <h2>About <span>Me</span></h2>
+      <h2 class="section-title">About <span>Me</span></h2>
       <h3>Software Engineer</h3>
 
       <p>
@@ -67,7 +88,7 @@
         <li><strong>City :</strong> Galle</li>
       </ul>
 
-      <a href="#" class="btn">See More</a>
+      <a href="#education" class="btn">See More</a>
 
     </div>
 
@@ -77,22 +98,37 @@
 
   <!-- Skills -->
   <section id="skills">
-    <h2 class="section-title">My Skills</h2>
-    <div>
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="skill-container">
       <div class="sd">
-        <h3 id="category">Software Development</h3>
-        <img src="assests/icons/java_5968282.png" height="75px" width="75px" alt="java">
-        <img src="assests/icons/python_5968350.png" height="75px" width="75px"  alt="python">
+        <h3 class="category">Software Development</h3>
+        <div id="java">
+          <img src="assests/icons/java_5968282.png" alt="java">
+        </div>
+        <div id="python">
+          <img src="assests/icons/python_5968350.png" alt="python">
+        </div>
       </div>
       <div class="dm">
-        <h3 id="category">Database Management</h3>
-        <img src="assests/icons/sql_7506880.png" height="75px" width="75px" alt="sql">
-        <img src="assests/icons/postgre_5968342.png" height="75px" width="75px" alt="postgres">
+        <h3 class="category">Database Management</h3>
+        <div id="sql">
+          <img src="assests/icons/sql_7506880.png" alt="sql">
+        </div>
+        <div id="postgres">
+          <img src="assests/icons/postgre_5968342.png" alt="postgres">
+        </div>
       </div>
       <div id="uiux">
-        <h3 id="category">UI/UX Design</h3>
-        <img src="assests/icons/html-5_5968267.png" height="75px" width="75px" alt="html">
-        <img src="assests/icons/css-3_5968242.png" height="75px" width="75px" alt="css">
+        <h3 class="category">UI/UX Design</h3>
+        <div id="html">
+          <img src="assests/icons/html-5_5968267.png"  alt="html">
+        </div>
+        <div id="css">
+          <img src="assests/icons/css-3_5968242.png" alt="css">
+        </div>
+        <div id="js">
+          <img src="assests/icons/java-script.png" alt="js">
+        </div>
       </div>
     </div>
   </section>
@@ -256,7 +292,7 @@
     <!-- Sections -->
     <div class="column">
       <h3>Sections</h3>
-      <p><a href="#home">Home</a></p>
+      <p><a href="#">Home</a></p>
       <p><a href="#about">About ME</a></p>
       <p><a href="#experience">Experience</a></p>
       <p><a href="#works">My Works</a></p>
