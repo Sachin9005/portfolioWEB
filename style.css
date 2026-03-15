@@ -398,53 +398,202 @@ color:#00e5ff;
 
 /* EDUCATION */
 
-#education{
-padding:100px 10%;
-background:#243b55;
+#education {
+    min-height: 100vh;
+    background: #0a0e17;                    /* deep dark background */
+    padding: 8rem 8% 6rem;
+    position: relative;
+    overflow: hidden;
 }
 
-#education>div{
-border-left:3px solid #00e5ff;
-padding-left:40px;
-max-width:600px;
-margin:auto;
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(to bottom, #00f7ff, #0095ff, #00f7ff);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-top: 210px;
+    margin-bottom: 100px;
+    border-radius: 2px;
+    box-shadow: 0 0 30px rgba(0, 247, 255, 0.25);
+    z-index: 1;
 }
 
-#education div div{
-margin-bottom:40px;
-position:relative;
+/* Each education item */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 2.5rem 3rem;
+    box-sizing: border-box;
+    z-index: 2;
 }
 
-#education div div::before{
-content:"";
-position:absolute;
-left:-49px;
-top:5px;
-width:18px;
-height:18px;
-background:#00e5ff;
-border-radius:50%;
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+  
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* Glowing cyan dot (circle) */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #0a0e17;
+    border: 5px solid #00f7ff;
+    border-radius: 50%;
+    top: 20%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 0 8px rgba(0, 247, 255, 0.25),
+                0 0 30px rgba(0, 247, 255, 0.4);
+    z-index: 3;
+}
+
+.timeline-item:nth-child(odd)::after {
+    right: -16px;
+}
+
+.timeline-item:nth-child(even)::after {
+    left: -16px;
+}
+
+/* Content styling */
+.timeline-item h3 {
+    font-size: 1.8rem;
+    color: #00f7ff;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+}
+
+.timeline-item h4 {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.timeline-item p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.timeline-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-item ul li {
+    font-size: 1.15rem;
+    margin-bottom: 0.6rem;
+    position: relative;
+    padding-left: 1.6rem;
+}
+
+.timeline-item ul li::before {
+    color: #00f7ff;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
 }
 
 /* EXPERIENCE */
 
-#experience{
-padding:100px 10%;
+#experience {
+    min-height: 100vh;
+    background: #0d1424;                    /* deep dark navy */
+    padding: 8rem 8% 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.experience-columns{
-display:flex;
-gap:60px;
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    background: #00f7ff;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(0, 247, 255, 0.4);
 }
 
-.experience-columns h3{
-margin-bottom:20px;
-color:#00e5ff;
+/* Two-column container */
+.experience-columns {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    max-width: 1400px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.experience-columns li{
-margin-bottom:20px;
-line-height:1.6;
+.column-left, .column-right {
+    flex: 1;
+    min-width: 380px;
+    border-radius: 16px;
+    padding: 2.5rem 2.5rem 3rem;
+    border: 1px solid rgba(0, 247, 255, 0.12);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5),
+                inset 0 0 20px rgba(0, 247, 255, 0.05);
+}
+
+.column-left h3, .column-right h3 {
+    font-size: 2.4rem;
+    color: #00f7ff;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+/* List items */
+.column-left ul, .column-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column-left li, .column-right li {
+    margin-bottom: 2.2rem;
+    padding-left: 1.8rem;
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.column-left li::before,
+.column-right li::before {
+    content: '•';
+    color: #00f7ff;
+    font-size: 2.2rem;
+    position: absolute;
+    left: -0.4rem;
+    top: -0.8rem;
+    filter: drop-shadow(0 0 8px #00f7ff);
+}
+
+.column-left li strong,
+.column-right li strong {
+    color: white;
+    font-size: 1.35rem;
+    display: block;
+    margin-bottom: 0.6rem;
 }
 
 /* WORKS */
