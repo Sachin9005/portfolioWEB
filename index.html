@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SachinSE.</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -176,22 +177,21 @@
 
   <!-- Experience -->
   <section id="experience">
-  <h2 class="section-title">My <span>Experience</span></h2>   <!-- optional: add <span> for cyan if you want -->
-
+  <h2 class="section-title">My <span>Experience</span></h2>   
   <div class="experience-columns">
     <div class="column-left">
-      <h3>Leadership</h3>                    <!-- remove ★ from here – we add it via CSS ::before -->
+      <h3>Leadership</h3>                    
       <ul>
         <li>
           <strong>Sports Captain</strong> — Vidyaloka College, 2024
           <br>As the elected Sports Captain, I serve as the primary liaison between the student body and the Physical Education department, overseeing athletic programs for over 200+ students.
         </li>
-        <!-- You had duplicate entry – keep only one or remove duplicate -->
+        
       </ul>
     </div>
 
     <div class="column-right">
-      <h3>Activities</h3>                    <!-- same, ★ added via CSS -->
+      <h3>Activities</h3>                   
       <ul>
         <li>
           <strong>School Athletic Team</strong> — Vidyaloka College, 2018 to 2024
@@ -207,64 +207,247 @@
 </section>
 
   <!-- My Works -->
-        <!-- Projects -->
-  <section id="works">
-   <h2 class="section-title">My Works</h2>
-    
-    <div>
-      <button><b><i>Projects</i></b></button>
-      <button>Assignments</button>
-    </div>
-    <br><br>
+ <!-- My Works Section -->
+<section id="works">
+    <h2 class="section-title">My <span>Works</span></h2>
 
-    <div>
-        <div>
-            <img src="assests/projects/terminal porject.png" height="125px"  alt="terminalProject">
-            <p>Terminal POS system</p>
+    <!-- Tab Toggle -->
+    <div class="tab-toggle">
+        <button class="tab-btn active" data-tab="projects">Projects</button>
+        <button class="tab-btn" data-tab="assignments">Assignments</button>
+    </div>
+
+    <!-- Projects Container -->
+    <div class="works-grid tab-content active" id="projects-grid">
+        <div class="work-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/terminal porject.png" alt="Terminal POS System">
+                <div class="card-overlay">
+                    <p class="short-desc">A terminal-based Point of Sale system with inventory tracking, receipt generation, and user authentication using Python & SQLite.</p>
+                </div>
+            </div>
+            <h3>Terminal POS System</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/terminal-pos" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
-      <div>
-        <img src="assests/projects/p1.jpeg" height="125px" alt="Connect4game">
-        <p>Connect4game</p>
-      </div>
-      <div>
-        <img src="assests/projects/Screenshot from 2026-01-06 10-23-19.png" height="125px" alt="carRental">
-        <p>carRental</p>
-      </div>      
-    </div>
-  </section>
-        <!-- Assignments -->
-  <section id="works">
-    <h2 class="section-title">My Works</h2>
-    
-    <div>
-      <button>Projects</button>
-      <button><b><i>Assignments</i></b></button>
+
+        <div class="work-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/connect 4 game.png" alt="Connect 4 Game">
+                <div class="card-overlay">
+                    <p class="short-desc">Classic Connect 4 game with AI opponent, beautiful animations, and responsive design built in JavaScript & Canvas.</p>
+                </div>
+            </div>
+            <h3>Connect 4 Game</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/connect4" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="work-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/Screenshot from 2026-01-06 10-23-19.png" alt="Car Rental System">
+                <div class="card-overlay">
+                    <p class="short-desc">Full-stack car rental platform with booking system, admin dashboard, and payment integration using React & Node.js.</p>
+                </div>
+            </div>
+            <h3>Car Rental Platform</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/carrental" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
     </div>
 
-    <div>
-      <div>
-        <img src="assests/projects/assigment.png" height="75px" alt="assigment">
-        <p>assigment1</p>
-      </div>
-      <div>
-        <img src="assests/projects/assigment.png" height="75px" alt="assigment">
-        <p>assigment2</p>
-      </div>
-      <div>
-        <img src="assests/projects/assigment.png" height="75px" alt="assigment">
-        <p>assigment3</p>
-      </div>
-      <div>
-        <img src="assests/projects/assigment.png" height="75px" alt="assigment">
-        <p>assigment4</p>
-      </div>
-      <div>
-        <img src="assests/projects/assigment.png" height="75px" alt="assigment">
-        <p>assigment5</p>
-      </div>
+    <!-- Assignments Container -->
+    <div class="works-grid tab-content" id="assignments-grid">
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 01 is for HTML</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
 
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 02 is for CSS</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 03 is for CSS</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 04 is for CSS</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 05 is for CSS</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 06 is for CSS</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 07 is for CSS</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 08 is for JS</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 09 is for JS</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 10 is for JS</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 11 is for ALL Website</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="work-card assignment-card">
+            <div class="card-img-wrapper">
+                <img src="assests/projects/assigment.png" alt="Assignment 01">
+                <div class="card-overlay">
+                    <p class="short-desc">Assignment 12 is for ALL Website</p>
+                </div>
+            </div>
+            <h3>Assignment 01</h3>
+            <div class="card-footer">
+                <a href="https://github.com/yourusername/assignment-01" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
     </div>
-  </section>
+
+    <script src="script.js"></script>
+</section>
 
   <!-- Gallery -->
   <section id="gallery">
