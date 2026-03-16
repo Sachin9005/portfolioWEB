@@ -450,92 +450,141 @@
 </section>
 
   <!-- Gallery -->
-  <section id="gallery">
-    <h2 class="section-title">My Gallery</h2>
-    <div>
-      <img src="assests/gallary/p2.jpeg" height="125px" alt="Gallery 1">
-      <img src="assests/gallary/p3.jpeg" height="125px" alt="Gallery 2">
-      <img src="assests/gallary/p4.jpeg" height="125px" alt="Gallery 3">
-      <img src="assests/gallary/p5.jpeg" height="125px" alt="Gallery 4">
+ <section id="gallery">
+  <h2 class="section-title">My <span>Gallery</span></h2>
+
+  <div class="scrolling-wrapper">
+    <div class="scrolling">
+      <!-- First set -->
+      <div class="item"><img src="assests/gallary/p2.jpeg" alt="Gallery 1" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/p4.jpeg" alt="Gallery 2" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/FB_IMG_1772908963957.jpg.jpeg"Gallery 3" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/FB_IMG_1772909778874.jpg.jpeg" alt="Gallery 4" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/FB_IMG_1772909801233.jpg.jpeg" alt="Gallery 5" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/IMG-20260207-WA0026.jpg.jpeg" alt="Gallery 6" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/IMG-20260209-WA0014.jpg.jpeg" alt="Gallery 7" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/IMG-20260310-WA0029.jpg.jpeg" alt="Gallery 8" loading="lazy"></div>
+
+      <div class="item"><img src="assests/gallary/p2.jpeg" alt="Gallery 1" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/p4.jpeg" alt="Gallery 2" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/FB_IMG_1772908963957.jpg.jpeg"Gallery 3" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/FB_IMG_1772909778874.jpg.jpeg" alt="Gallery 4" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/FB_IMG_1772909801233.jpg.jpeg" alt="Gallery 5" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/IMG-20260207-WA0026.jpg.jpeg" alt="Gallery 6" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/IMG-20260209-WA0014.jpg.jpeg" alt="Gallery 7" loading="lazy"></div>
+      <div class="item"><img src="assests/gallary/IMG-20260310-WA0029.jpg.jpeg" alt="Gallery 8" loading="lazy"></div>
+
     </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <form>
-      <input type="text" placeholder="First Name" required>
-      <input type="text" placeholder="Last Name" required>
-      <input type="tel" placeholder="Phone No." required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Message" required></textarea>
-      <br>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Contact Info -->
-   <section class="bottom-contact">
-  <div class="columns-container">
-
-    <!-- Sections -->
-    <div class="column">
-      <h3>Sections</h3>
-      <p><a href="#">Home</a></p>
-      <p><a href="#about">About ME</a></p>
-      <p><a href="#experience">Experience</a></p>
-      <p><a href="#works">My Works</a></p>
-      <p><a href="#gallery">Gallery</a></p>
-      <p><a href="#contact">Contact</a></p>
-    </div>
-
-    <!-- Contacts -->
-    <div class="column">
-      <h3>Contacts</h3>
-      <div class="contact-item">
-        <img src="assests/icons/phone-call.png" height="30" alt="Phone" loading="lazy">
-        <p>+94 (78) 863 9248</p>
-      </div>
-      <div class="contact-item">
-        <img src="assests/icons/whatsapp.png" height="30" alt="WhatsApp" loading="lazy">
-        <p>+94 (70) 391 4326</p>
-      </div>
-      <div class="contact-item">
-        <img src="assests/icons/gmail.png" height="30" alt="Email" loading="lazy">
-        <p>sachinishanga91@gmail.com</p>
-      </div>
-      <div class="contact-item">
-        <img src="assests/icons/github.png" height="30" alt="GitHub" loading="lazy">
-        <p>Sachin9005</p>
-      </div>
-      <div class="contact-item">
-        <img src="assests/icons/telegram.png" height="30" alt="Telegram" loading="lazy">
-        <p>+94 (78) 863 9248</p>
-      </div>
-    </div>
-
-    <!-- Social Media -->
-    <div class="column">
-      <h3>Social Media</h3>
-      <div class="contact-item">
-        <img src="assests/icons/facebook.png" height="30" alt="Facebook" loading="lazy">
-        <p>Sachin Ishanga</p>
-      </div>
-      <div class="contact-item">
-        <img src="assests/icons/instagram.png" height="30" alt="Instagram" loading="lazy">
-        <p>sachiya9999</p>
-      </div>
-      <div class="contact-item">
-        <img src="assests/icons/linkedin.png" height="30" alt="LinkedIn" loading="lazy">
-        <p>sachin_ishanga</p>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<footer class="main-footer">
-  <p>© 2026 Sachin Ishanga | Software Engineer</p>
+  <!-- Contact -->
+<section id="contact">
+  <div class="contact-container">
+    <h2 class="section-title">Contact <span>Me</span></h2>
+
+    <form id="contact-form" class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Phone No." required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+      </div>
+
+      <div class="form-group full-width">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  <!-- Contact Info -->
+<footer class="bottom-contact">
+  <div class="columns-container">
+
+    <!-- Sections Column -->
+    <div class="column">
+      <h3>Sections</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#works">My Works</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contacts Column -->
+    <div class="column">
+      <h3>Contacts</h3>
+      <ul class="contact-list">
+        <li>
+          <img src="assests/icons/phone-call.png" alt="Phone" loading="lazy" width="28" height="28">
+          <span>+94 (78) 863 9248</span>
+        </li>
+        <li>
+          <img src="assests/icons/whatsapp.png" alt="WhatsApp" loading="lazy" width="28" height="28">
+          <span>+94 (70) 391 4326</span>
+        </li>
+        <li>
+          <img src="assests/icons/gmail.png" alt="Email" loading="lazy" width="28" height="28">
+          <a href="mailto:sachinishanga91@gmail.com">sachinishanga91@gmail.com</a>
+        </li>
+        <li>
+          <img src="assests/icons/github.png" alt="GitHub" loading="lazy" width="28" height="28">
+          <a href="https://github.com/Sachin9005" target="_blank">Sachin9005</a>
+        </li>
+        <li>
+          <img src="assests/icons/telegram.png" alt="Telegram" loading="lazy" width="28" height="28">
+          <span>+94 (78) 863 9248</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Social Media Column -->
+    <div class="column">
+      <h3>Social Media</h3>
+      <ul class="social-list">
+        <li>
+          <img src="assests/icons/facebook.png" alt="Facebook" loading="lazy" width="28" height="28">
+          <a href="https://facebook.com/SachinIshanga" target="_blank">Sachin Ishanga</a>
+        </li>
+        <li>
+          <img src="assests/icons/telegram.png" alt="Instagram" loading="lazy" width="28" height="28">
+          <a href="https://instagram.com/sachiya9999" target="_blank">sachiya9999</a>
+        </li>
+        <li>
+          <img src="assests/icons/linkedin.png" alt="LinkedIn" loading="lazy" width="28" height="28">
+          <a href="https://linkedin.com/in/sachin_ishanga" target="_blank">sachin_ishanga</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Optional copyright line -->
+  <div class="footer-bottom">
+    <p>© 2026 Sachin Ishanga. All rights reserved.</p>
+  </div>
 </footer>
 </body>
 </html>
