@@ -1125,9 +1125,9 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(18, 18, 121) 64%, 
   }
 
   .about-content .btn {
-    margin-left: 10rem;
+    margin-left: 12rem;
     padding: 11px 28px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   /* Skills */
@@ -1158,7 +1158,7 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(18, 18, 121) 64%, 
   }
 
   .education-timeline::before {
-    left: 78px;
+    left: 72px;
     margin-top: 14rem;
     margin-bottom: 18rem;
   }
@@ -1208,11 +1208,12 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(18, 18, 121) 64%, 
 
   /* Works Section */
   #works {
+    min-height: 55vh;
     padding: 70px 6% 50px;
   }
 
   .tab-toggle {
-    width: 35%;
+    width: 38%;
     overflow-x: auto;
     justify-content: center;
   }
@@ -1248,12 +1249,12 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(18, 18, 121) 64%, 
   /* Gallery */
   #gallery {
     min-height: 45vh;
-    padding: 70px 8% 50px;
+    padding: 90px 8% 50px;
   }
 
   .item {
-    width: 290px;
-    height: 290px;
+    width: 300px;
+    height: 280px;
   }
 
   /* Contact Form */
@@ -1436,7 +1437,8 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(18, 18, 121) 64%, 
 
   .about-content .btn {
     padding: 10px 24px;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-left: 11rem;
   }
 
   /* Skills */
@@ -1463,7 +1465,7 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(18, 18, 121) 64%, 
   /* Education Timeline */
 
   .education-timeline::before {
-        left: 55px;
+        left: 60px;
         margin-top: 13rem;
     }
 
@@ -1518,15 +1520,15 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(18, 18, 121) 64%, 
   }
 
   .tab-toggle {
-    width: 62%;
+    width: 55%;
     flex-direction: row;
     overflow-x: auto;
   }
 
   .tab-btn {
-    padding: 0.7rem 1.4rem;
-    font-size: 0.95rem;
-    white-space: nowrap;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.98rem;
+    ;
   }
 
   .works-grid {
@@ -1573,7 +1575,7 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(18, 18, 121) 64%, 
 
   /* Contact Form */
   #contact {
-    padding: 60px 5% 40px;
+    padding: 60px 8% 40px;
   }
 
   .form-row {
