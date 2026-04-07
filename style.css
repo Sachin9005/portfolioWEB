@@ -937,6 +937,12 @@ color:#00e5ff;
   text-align: left;
 }
 
+.column span :hover {
+  cursor: pointer;
+  color: #00f7ff;
+  transform: translateX(6px);
+}
+
 .column h3 {
   font-size: 1.8rem;
   color: #00f7ff;
@@ -981,6 +987,7 @@ color:#00e5ff;
 }
 
 .column a:hover {
+  cursor: pointer;
   color: #00f7ff;
   transform: translateX(6px);
 }
