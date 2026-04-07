@@ -1,3 +1,5 @@
+
+// Tab functionality
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
 
@@ -11,9 +13,11 @@ const tabContents = document.querySelectorAll('.tab-content');
       });
   });
 
+
+// Header hide/show on scroll
 let lastScrollY = window.scrollY;
 const header = document.querySelector('.header');
-const delta = 5;          // minimum scroll amount to react (prevents jitter)
+const delta = 4;        
 const hideAfter = 120;    // start hiding only after scrolling past this many pixels
 
 window.addEventListener('scroll', () => {
@@ -31,4 +35,4 @@ window.addEventListener('scroll', () => {
   }
 
   lastScrollY = currentScrollY;
-}, { passive: true });   // improves scroll performance
+}, { passive: true });
